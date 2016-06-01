@@ -2,7 +2,7 @@ package main
 
 import (
 	"fmt"
-	ip "interfacep"
+	inter "interfacep"
 )
 
 const (
@@ -14,7 +14,7 @@ const (
 )
 
 func main() {
-	ip.Invoke()
+	inter.Invoke()
 }
 
 func saveUnit() {
