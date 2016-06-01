@@ -2,7 +2,7 @@ package main
 
 import (
 	"fmt"
-	"mapr"
+	ip "interfacep"
 )
 
 const (
@@ -14,7 +14,7 @@ const (
 )
 
 func main() {
-	mapr.NestMap()
+	ip.Invoke()
 }
 
 func saveUnit() {
