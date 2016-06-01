@@ -2,7 +2,7 @@ package main
 
 import (
 	"fmt"
-	inter "interfacep"
+	rp "reflectp"
 )
 
 const (
@@ -14,7 +14,7 @@ const (
 )
 
 func main() {
-	inter.Invoke()
+	rp.Invoke()
 }
 
 func saveUnit() {
