@@ -1,8 +1,8 @@
 package main
 
 import (
+	cp "channelp"
 	"fmt"
-	rp "reflectp"
 )
 
 const (
@@ -14,7 +14,12 @@ const (
 )
 
 func main() {
-	rp.Invoke()
+	c := make(chan string)
+	go cp.Chat(c)
+	for i := 0; i < 10; i++ {
+		c <- fmt.Sprintf("From Main: Hi, #%d", i)
+		fmt.Println(<-c)
+	}
 }
 
 func saveUnit() {
